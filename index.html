@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- icon -->
+    <link rel="icon" href="./asset/img/logo-wedsite.png" type="image/gif" sizes="16x16">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/font/themify-icons/themify-icons.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- Import CSS file -->
+    <link rel="stylesheet" href="./asset/css/grid.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+    <title>Fresh Mart</title>
+</head>
+
+<body>
+    <div class="app">
+        <!-- HEADER -->
+        <header class="header">
+            <!-- Header Nav -->
+            <div class="background-grays">
+                <div class="grid wide">
+                    <div class="header-nav">
+                        <div class="header-nav__label hidden-m-t">
+                            <span>Welcome To Our Fresh Mart Store</span>
+                        </div>
+                        <div class="header-nav__list l-6 m-12">
+                            <li class="header-nav__item">Checkout</li>
+                            <li class="header-nav__item">Wishlist</li>
+                            <li class="header-nav__item">My Account</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header Search -->
+            <div class="header__searchs grid wide">
+                <!-- Header Search Main -->
+                <div class="header-search row  hidden-m-t">
+                    <!-- Search logo -->
+                    <div class="l-4 search__logo">
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0432/4438/8517/files/logo_large.png?v=1594282478" alt="">
+                        </a>
+                    </div>
+                    <!-- Search Inputs -->
+                    <div class="l-4 search__inputs">
+                        <input type="text" placeholder="Search our Catalog">
+                        <button class="search__button">
+                        Search
+                    </button>
+                    </div>
+                    <!-- Search Infor -->
+                    <div class="l-4 search__infor">
+                        <!-- Search Infor Item-->
+                        <div class="search__infor-item">
+                            <i class="ti-email"></i>
+                            <div class="infor-item__text">
+                                <div class="infor-item__name">
+                                    Email Us :
+                                </div>
+                                <div class="infor-item__decs">
+                                    linhlinhkook99.com
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search Infor Item-->
+                        <div class="search__infor-item">
+                            <i class="ti-shopping-cart-full"></i>
+                            <div class="infor-item__text">
+                                <div class="infor-item__name">
+                                    Shopping Cart
+                                </div>
+                                <div class="infor-item__decs">
+                                    0 Item
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Header Soft -->
+                <div class="header-search-soft row hidden-on-pc hide-pc-low ">
+                    <!-- Header Soft Left-->
+                    <div class="header-search-list left m-4">
+                        <!-- Header Soft Left Menu-->
+                        <div onclick="" class="header-search-item">
+                            <i onclick="" id="menuSoft" class="ti-menu"></i>
+                        </div>
+                        <!-- Header Soft Left Search-->
+                        <div onclick="" class="header-search-item nav-right__icon">
+                            <i onclick="" class="ti-search"></i>
+                            <div class="soft__search">
+                                <input type="text" placeholder="Search our Category">
+                                <button class="btn btn-primary-orange">
+                                <i class="ti-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Header Soft Logo-->
+                    <div class="search__logo m-4">
+                        <a href="/">
+                            <img src="https://cdn.shopify.com/s/files/1/0432/4438/8517/files/logo_large.png?v=1594282478" alt="">
+                        </a>
+                    </div>
+                    <!-- Header Soft Right-->
+                    <div class="header-search-list right m-4">
+                        <!-- Header Soft Right Nav-->
+                        <div onclick="" class="header-search-item nav-right__icon">
+                            <i onclick="" class="ti-view-grid "></i>
+                            <ul class="soft__nav-list nav-right">
+                                <li class="soft__nav-item">
+                                    HOME
+                                </li>
+                                <li class="soft__nav-item">
+                                    BLOG
+                                </li>
+                                <li class="soft__nav-item">
+                                    CATEGORY
+                                </li>
+                                <li class="soft__nav-item">
+                                    CONTACT
+                                </li>
+                                <li class="soft__nav-item">
+                                    PRODUCT
+                                </li>
+                                <li class="soft__nav-item">
+                                    CART
+                                </li>
+                                <li class="soft__nav-item">
+                                    ABOUT US
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Header Soft Right Bag-->
+                        <div onclick="" class="header-search-item nav-right__icon">
+                            <i onclick="" class="ti-shopping-cart"></i>
+                            <div class="soft__bag">
+                                <!-- Header Soft Right Bag List item-->
+                                <div class="soft__bag-product-list">
+                                    <!-- Header Soft Right Bag item-->
+                                    <div class="soft__bag-product-item">
+                                        <div class="soft__bag-item-img">
+                                            <img src="./asset/img/The Roasted Bean.png" alt="">
+                                        </div>
+                                        <div class="soft__bag-item-decs">
+                                            <div class="soft__bag-item-decs-name">
+                                                The Roasted Bean
+                                            </div>
+                                            <div class="soft__bag-item-decs-price">
+                                                1 x $25.00
+                                            </div>
+                                        </div>
+                                        <div class="soft__bag-product-item-btndelete">
+                                            <i class="far fa-times-circle"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Header Soft Right Bag item-->
+                                    <div class="soft__bag-product-item">
+                                        <div class="soft__bag-item-img">
+                                            <img src="./asset/img/organic Banana.png" alt="">
+                                        </div>
+                                        <div class="soft__bag-item-decs">
+                                            <div class="soft__bag-item-decs-name">
+                                                The Organic Banana
+                                            </div>
+                                            <div class="soft__bag-item-decs-price">
+                                                10 x $20.00
+                                            </div>
+                                        </div>
+                                        <div class="soft__bag-product-item-btndelete">
+                                            <i class="far fa-times-circle"></i>
+                                        </div>
+                                    </div>
+                                    <!-- Header Soft Right Bag item-->
+                                    <div class="soft__bag-product-item">
+                                        <div class="soft__bag-item-img">
+                                            <img src="./asset/img/organic Banana.png" alt="">
+                                        </div>
+                                        <div class="soft__bag-item-decs">
+                                            <div class="soft__bag-item-decs-name">
+                                                The Organic Banana
+                                            </div>
+                                            <div class="soft__bag-item-decs-price">
+                                                10 x $20.00
+                                            </div>
+                                        </div>
+                                        <div class="soft__bag-product-item-btndelete">
+                                            <i class="far fa-times-circle"></i>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- Header Soft Right Bag Total-->
+                                <div class="soft__bag-total">
+                                    <div class="soft__bag-total-price">
+                                        <span>
+                                        Subtotal
+                                    </span>
+                                        <span>
+                                        $425.00
+                                    </span>
+                                    </div>
+                                    <div class="soft__bag-total-decs">
+                                        <span>Shipping & taxes calculated at checkout</span>
+                                    </div>
+                                </div>
+                                <!-- Header Soft Right Bag Buttons-->
+                                <div class="soft__bag-buttons">
+                                    <button class="btn btn-primary-green">
+                                    CHECKOUT
+                                </button>
+                                    <button class="btn btn-primary-orange">
+                                    YOUR CART
+                                </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- NAVICATION -->
+        <div class="nav hidden-m-t ">
+            <div class="background-primary-green position-relative">
+                <div class="grid wide navication">
+                    <div class="row ">
+                        <!-- NAV label -->
+                        <div class="col c-3">
+                            <div class="nav__label-menu">
+                                <i class="fas fa-list-ul"></i>
+                                <span>Categories</span>
+                            </div>
+                        </div>
+                        <!-- NAV MAIN -->
+                        <div class="col c-5 nav__links">
+                            <ul class="nav-links__list">
+                                <li class="nav-links__item">
+                                    HOME
+                                </li>
+                                <li class="nav-links__item">
+                                    BLOG
+                                </li>
+                                <li class="nav-links__item">
+                                    CATEGORY
+                                </li>
+                                <li class="nav-links__item">
+                                    CONTACT
+                                </li>
+                                <li class="nav-links__item">
+                                    PRODUCT
+                                </li>
+                                <li class="nav-links__item">
+                                    VIEW MORE
+                                    <div class="nav-links__soft">
+                                        <div class="nav-links__soft-item">
+                                            CART
+                                        </div>
+                                        <div class="nav-links__soft-item">
+                                            ABOUT US
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- NAV Offer -->
+                <div class="c-4 nav__offer">
+                    <div class="nav-offer__precent">
+                        <span>%</span> OFFER
+                    </div>
+                    <div class="nav-offer__text">
+                        <span>
+                        Flat 10% Off First Order In Store
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- CONTAINER SHOP -->
+        <div class="grid wide container">
+            <div class="row reverse">
+                <!-- SIDE BAR -->
+                <div class="col-side-bar col l-3 m-12">
+                    <!-- Side Nav Bar list -->
+                    <ul class="side-bar__list hidden-m-t">
+                        <li class="side-bar__item ">
+                            <a href="">
+                            Organic
+                            <i class="ti-angle-right"></i>
+                        </a>
+                            <!-- Side Bar Soft -->
+                            <div class="side-bar__soft--animation side-bar__soft ">
+                                <!-- Side Bar Soft Text-->
+                                <div class="side-bar__text">
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Fruits
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Peach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kiwi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Apple
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Spinach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Dry fruits
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Vegetables
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Cucumber
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Cherry tomatoes
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Broccoli
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Artichoke
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kohlrabi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Organic Products
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Dry fruits
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Dairy products
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Beverages
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Peach fruits
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Nectarines
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Peach
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Special Product
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <div class="side-bar__soft-list-img">
+                                                <img src="./asset/img/The Watermalen.png" alt="">
+                                            </div>
+                                            <div class="new-products__item-decs">
+                                                <div class="new-products__item-decs-name product-item__decs-name">
+                                                    The Wartermalen
+                                                </div>
+                                                <div class="new-products__item-decs-prices product-item__decs-prices">
+                                                    <div class="product-item__decs-price-old">
+                                                        $55.00
+                                                    </div>
+                                                    <div class="product-item__decs-price-current">
+                                                        $52.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Side Bar Soft Image Banner-->
+                                <div class="side-bar__soft-banner">
+                                    <div class="side-bar__soft-banner-item">
+                                        <img src="./asset/img/menu-banner-1_600x150.png" alt="">
+                                    </div>
+                                    <div class="side-bar__soft-banner-item">
+                                        <img src="./asset/img/menu-banner-2_600x150.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">Blogs</a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">Collection</a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="" class="">
+                            Accessories
+                            <i class="ti-angle-right"></i>
+                        </a>
+                            <span class="side-bar__item--sale">SALE</span>
+                            <!-- Side Bar Soft -->
+                            <div class="side-bar__soft--animation side-bar__soft ">
+                                <!-- Side Bar Soft Text-->
+                                <div class="side-bar__text">
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Vegetables
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Cucumber
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Cherry tomatoes
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Broccoli
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Artichoke
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kohlrabi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Fruits
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Peach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kiwi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Apple
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Spinach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Dry fruits
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Latest Product
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <div class="side-bar__soft-list-img">
+                                                <img src="./asset/img/American Orange.png" alt="">
+                                            </div>
+                                            <div class="new-products__item-decs">
+                                                <div class="new-products__item-decs-name product-item__decs-name">
+                                                    American Orange
+                                                </div>
+                                                <div class="new-products__item-decs-prices product-item__decs-prices">
+                                                    <div class="product-item__decs-price-current">
+                                                        $33.00
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">
+                            Include Pages
+                            <i class="ti-angle-right"></i>
+                        </a>
+                            <!-- Side Bar Soft -->
+                            <div class="side-bar__soft--animation side-bar__soft ">
+                                <!-- Side Bar Soft Text-->
+                                <div class="side-bar__text">
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Pages
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Wishlist
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                404
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Contact
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Blog
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">About Us</a>
+                            <span class="side-bar__item--new">NEW</span>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">
+                            Category
+                            <i class="ti-angle-right"></i>
+                        </a>
+                            <!-- Side Bar Soft -->
+                            <div class="side-bar__soft--animation side-bar__soft ">
+                                <!-- Side Bar Soft Text-->
+                                <div class="side-bar__text">
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Fruits
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Peach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kiwi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Apple
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Spinach
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Dry fruits
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Side Bar Soft List-->
+                                    <div class="side-bar__soft-col">
+                                        <!-- Side Bar Soft List Header-->
+                                        <div class="side-bar__soft-list-header">
+                                            Vegetables
+                                        </div>
+                                        <ul class="side-bar__soft-list">
+                                            <li class="side-bar__soft-item">
+                                                Cucumber
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Cherry tomatoes
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Broccoli
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Artichoke
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Kohlrabi
+                                            </li>
+                                            <li class="side-bar__soft-item">
+                                                Celery
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Side Bar Soft Image Banner-->
+                                <div class="side-bar__soft-banner">
+                                    <div class="side-bar__soft-banner-item">
+                                        <img src="./asset/img/menu-banner-3_600x150.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">FAQs</a>
+                            <span class="side-bar__item--hot">HOT</span>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">Fruits</a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">Vegetables</a>
+                        </li>
+                        <li class="side-bar__item">
+                            <a href="">Peach</a>
+                        </li>
+                    </ul>
+                    <!-- Side Category -->
+                    <ul class="side-category__list">
+                        <li class="side-category__item">
+                            <a href="" class="side-category__link">
+                                <h2>01</h2>
+                                <p>Peach</p>
+                            </a>
+                            <div class="side-category__item-img hidden-m-t">
+                                <img src="./asset/img/side-category-img.png" alt="">
+                            </div>
+                        </li>
+                        <li class="side-category__item">
+                            <a href="" class="side-category__link">
+                                <h2>02</h2>
+                                <p>Spinach</p>
+                            </a>
+                        </li>
+                        <li class="side-category__item">
+                            <a href="" class="side-category__link">
+                                <h2>03</h2>
+                                <p>Broccoli</p>
+                            </a>
+                        </li>
+                        <li class="side-category__item">
+                            <a href="" class="side-category__link">
+                                <h2>04</h2>
+                                <p>Dry Fruits</p>
+                            </a>
+                        </li>
+                        <li class="side-category__item">
+                            <a href="" class="side-category__link">
+                                <h2>05</h2>
+                                <p>Cucumber</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Side Banner -->
+                    <div class="side-banner m-12 c-12">
+                        <img src="./asset/img/Left_Banner_345x417.png" alt="">
+                    </div>
+                    <!-- Side New products -->
+                    <div class="side-new-products">
+                        <!-- Side New products Header-->
+                        <div class="side-new-products-header shop-header">
+                            <div class="shop-header__title">
+                                <h2>New Products</h2>
+                            </div>
+                            <div class="shop-header__control">
+                                <i id="btnPrevNewProduct" class="shop-header__control-left ti-angle-left"></i>
+                                <i id="btnNextNewProduct" class="ti-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- Side New products List-->
+                        <div class="new-products__list">
+                            <div class="new-products__list-wide new-products__list-wides">
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/The Watermalen.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            The Wartermalen
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $55.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $52.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Sed at nunc quis.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Sed at nunc quis
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $42.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/porro quisquam.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Porro quisquam
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Consectetur adipiscing.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Consectetur Apple Banana
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Side New products List-->
+                            <div class="new-products__list-wide new-products__list-wides">
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Fusce fermentum.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Fusce fermentum
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $55.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $50.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Organic Chilli.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Organic Chilli
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $42.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Japanese Strawberry.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Japanese Strawberry
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $45.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Fresh Vagitables.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Fresh Vagitables
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $38.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $35.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side Customer Feedback -->
+                    <div class="side-customer-feedback">
+                        <!-- Side Customer Feedback Header-->
+                        <div class="customer__header shop-header">
+                            <div class="shop-header__title">
+                                <h2>Our Client Say</h2>
+                            </div>
+                            <div class="shop-header__control">
+                                <i id="btnPrevCustomer" class="shop-header__control-left ti-angle-left"></i>
+                                <i id="btnNextCustomer" class="ti-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- Side Customer Feedback List-->
+                        <div class="customer__list">
+                            <div class="customer__list-wide">
+                                <!-- Side Customer Feedback Item -->
+                                <div class="customer__item col l-12 m-12 c-12">
+                                    <div class="customer__icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div class="customer__body">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                                        </p>
+                                    </div>
+                                    <div class="customer__avt">
+                                        <img src="./asset/img/customer.png" alt="">
+                                    </div>
+                                    <div class="customer__info">
+                                        <span class="customer__infor-name">
+                                        John Doe
+                                    </span>
+                                        <span class="customer__infor-job">
+                                        Web Designer
+                                    </span>
+                                    </div>
+                                </div>
+                                <!-- Side Customer Feedback Item -->
+                                <div class="customer__item col l-12 m-12 c-12">
+                                    <div class="customer__icon">
+                                        <i class="fas fa-comments"></i>
+                                    </div>
+                                    <div class="customer__body">
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                                        </p>
+                                    </div>
+                                    <div class="customer__avt">
+                                        <img src="./asset/img/customer-2.png" alt="">
+                                    </div>
+                                    <div class="customer__info">
+                                        <span class="customer__infor-name">
+                                        John Doe
+                                    </span>
+                                        <span class="customer__infor-job">
+                                        Web Designer
+                                    </span>
+                                    </div>
+                                </div>
+                                <!-- Side Customer Feedback Item -->
+                                <!-- <div class="customer__item col l-4 m-4">
+                                <div class="customer__icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="customer__body">
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
+                                    </p>
+                                </div>
+                                <div class="customer__avt">
+                                    <img src="./asset/img/customer-3.png" alt="">
+                                </div>
+                                <div class="customer__info">
+                                    <span class="customer__infor-name">
+                                        John Doe
+                                    </span>
+                                    <span class="customer__infor-job">
+                                        Web Designer
+                                    </span>
+                                </div>
+                            </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side Best Sellers product -->
+                    <div class="side-new-products">
+                        <!-- Side New products Header-->
+                        <div class="side-new-products-header shop-header">
+                            <div class="shop-header__title">
+                                <h2>Top Best Seller</h2>
+                            </div>
+                            <div class="shop-header__control">
+                                <i id="btnPrevBestSeller" class="shop-header__control-left ti-angle-left"></i>
+                                <i id="btnNextBestSeller" class="ti-angle-right"></i>
+                            </div>
+                        </div>
+                        <!-- Side New products List-->
+                        <div class="new-products__list">
+                            <!-- Side New products List-->
+                            <div class="new-products__list-wide new-products__list-wide--best-seller">
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Fusce fermentum.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Fusce fermentum
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $55.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $50.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Organic Chilli.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Organic Chilli
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $42.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Japanese Strawberry.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Japanese Strawberry
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $45.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Fresh Vagitables.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Fresh Vagitables
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $38.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $35.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-products__list-wide new-products__list-wide--best-seller">
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/The Watermalen.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            The Wartermalen
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+                                            <div class="product-item__decs-price-old">
+                                                $55.00
+                                            </div>
+                                            <div class="product-item__decs-price-current">
+                                                $52.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Sed at nunc quis.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Sed at nunc quis
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $42.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/porro quisquam.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Porro quisquam
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Side New products Item-->
+                                <div class="new-products__item col c-6">
+                                    <div class="new-products__item-img">
+                                        <img src="./asset/img/Consectetur adipiscing.png" alt="">
+                                    </div>
+                                    <div class="new-products__item-decs">
+                                        <div class="new-products__item-decs-name product-item__decs-name">
+                                            Consectetur Apple Banana
+                                        </div>
+                                        <div class="new-products__item-decs-prices product-item__decs-prices">
+
+                                            <div class="product-item__decs-price-current">
+                                                $40.00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MAIN CONTAINER -->
+                <div class="container-body col l-9 m-12">
+                    <!-- Silde show banner -->
+                    <div class="slide-shows row ">
+                        <div class="silde-show col c-12">
+                            <div class="slide-show__wide no-wrap row">
+                                <!-- Silde show banner item-->
+                                <div class="slide-show__item col c-12 m-12">
+                                    <img class="container__banner-img" src="./asset/img/banner.png" alt="">
+                                    <!-- Silde show banner label-->
+                                    <div class="slide-show__label">
+                                        <div class="label__sub">BIG SALE</div>
+                                        <div class="label__main">
+                                            <h2>Organic Mart</h2>
+                                        </div>
+                                        <div class="label__desc">
+                                            <p>Save Upto 50% Off On Your First Order</p>
+                                        </div>
+                                        <button>SHOP NOW</button>
+                                    </div>
+                                </div>
+                                <!-- Silde show banner item-->
+                                <div class="slide-show__item col c-12 m-12">
+                                    <img class="container__banner-img" src="./asset/img/fruit1_2048x.png" alt="">
+                                    <!-- Silde show banner label-->
+                                    <div class="slide-show__label left">
+                                        <div class="label__sub"> FRESH FRUITS</div>
+                                        <div class="label__main">
+                                            <h2>Big Discount</h2>
+                                        </div>
+                                        <div class="label__desc">
+                                            <p>Save Upto 50% Off On Your First Order</p>
+                                        </div>
+                                        <button>SHOP NOW</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Silde show banner dots-->
+                        <div class="slide-show__control-dots">
+                            <div class="slide-show__control-dot-item active">
+                            </div>
+                            <div class="slide-show__control-dot-item">
+                            </div>
+                        </div>
+                        <!-- Silde show banner control-->
+                        <div class="slide-show__control">
+                            <div id="slide-show-prev" class="slide-show__control-item slide-show__control-item--left">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div id="slide-show-next" class="slide-show__control-item slide-show__control-item--right">
+                                <i class="fas fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Services -->
+                    <div class="row services">
+                        <div class=" col l-4 m-4 c-12">
+                            <div class="service__item">
+                                <div class="service__item-img">
+                                    <img src="./asset/img/service-lock.png" alt="">
+                                </div>
+                                <div class="service__item-text">
+                                    <div class="service__item-text-heading">
+                                        SECURE PAYMENT
+                                    </div>
+                                    <div class="service__item-text-decs">
+                                        Lorem ipsum Dolor Site Amet
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-4 m-4 c-12">
+                            <div class="service__item">
+                                <div class="service__item-img">
+                                    <img src="./asset/img/service-gift.png" alt="">
+                                </div>
+                                <div class="service__item-text">
+                                    <div class="service__item-text-heading">
+                                        MONEY BACKWARD
+                                    </div>
+                                    <div class="service__item-text-decs">
+                                        Lorem ipsum Dolor Site Amet
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" col l-4 m-4 c-12">
+                            <div class="service__item">
+                                <div class="service__item-img">
+                                    <img src="./asset/img/service-headphone.png" alt="">
+                                </div>
+                                <div class="service__item-text">
+                                    <div class="service__item-text-heading">
+                                        OUR SERVICE
+                                    </div>
+                                    <div class="service__item-text-decs">
+                                        Lorem ipsum Dolor Site Amet
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Shop section -->
+                    <div class="row shop-section">
+                        <!-- Shope Title -->
+                        <div class="col c-12">
+                            <div class="shop-header">
+                                <div class="shop-header__title">
+                                    <h2>Trending Products</h2>
+                                </div>
+                                <div class="shop-header__control">
+                                    <i class="ti-angle-left"></i>
+                                    <i class="ti-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shop Product Tab -->
+                        <div class="col c-12">
+                            <div class="shop-tab">
+                                <div class="shop-tab__item shop-tab__item--acive">
+                                    Featured
+                                </div>
+                                <div class="shop-tab__item">
+                                    Latest
+                                </div>
+                                <div class="shop-tab__item">
+                                    Best Sellers
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Shop product list -->
+                        <div class="col c-12">
+                            <div class="row product-list">
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Consectetur adipiscing.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $30.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Vis feugiat delenit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/The Roasted Bean.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $25.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                The Roasted Bean
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/porro quisquam.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $40.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Porro quisquam
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Japanese Strawberry.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__label product-item__label-sale">
+                                                <span>SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-old">
+                                                    $45.00
+                                                </div>
+                                                <div class="product-item__decs-price-current">
+                                                    $40.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Japanese Strawberry
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/The Watermalen.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__label product-item__label-sale">
+                                                <span>SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-old">
+                                                    $55.00
+                                                </div>
+                                                <div class="product-item__decs-price-current">
+                                                    $52.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                The Watermalen
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Sed at nunc quis.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $42.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Sed at nunc quis
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Organic Chilli.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__label product-item__label-soldout">
+                                                <span>SOLD OUT</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $42.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Organic Chilli
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Fusce fermentum.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__label product-item__label-sale">
+                                                <span>SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $50.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Fusce fermentum
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Blog banner -->
+                        <div class="col c-12">
+                            <div class="blog">
+                                <!-- <img src="./asset/img/storyblock.png" alt=""> -->
+                                <div class="blog__text col l-6 m-12">
+                                    <div class="blog__text-header">
+                                        All Seasonal Fruits
+                                    </div>
+                                    <div class="blog__text-body">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                                    </div>
+                                    <div class="blog__text-btns">
+                                        <button class="blog__text-btn btn-primary-orange">
+                                        READ MORE
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ads banner -->
+                        <div class=" col c-12 ">
+                            <div class="ads row">
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="ads-item">
+                                        <a href="">
+                                            <img src="./asset/img/ads-banner.png" alt="">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="col l-6 m-6 c-12">
+                                    <div class="ads-item">
+                                        <a href="">
+                                            <img src="./asset/img/ads-banner-2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal of the day -->
+                        <!-- Deal of the day Header-->
+                        <div class="col c-12">
+                            <div class="shop-header">
+                                <div class="shop-header__title">
+                                    <h2>Deal Of The Day</h2>
+                                </div>
+                                <div class="shop-header__control">
+                                    <i class="ti-angle-left"></i>
+                                    <i class="ti-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Deal of the day list item -->
+                        <div class="col c-12">
+                            <div class="row product-list">
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__decs">
+                                            <div class="deal__timing">
+                                                <div class="deal__timing-days deal__timing-item">
+                                                    101
+                                                </div>
+                                                <div class="deal__timing-hours deal__timing-item">
+                                                    12
+                                                </div>
+                                                <div class="deal__timing-minutes deal__timing-item">
+                                                    46
+                                                </div>
+                                                <div class="deal__timing-seconds deal__timing-item">
+                                                    01
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Consectetur adipiscing.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star voted"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $30.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Vis feugiat delenit
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__decs">
+                                            <div class="deal__timing">
+                                                <div class="deal__timing-days deal__timing-item">
+                                                    101
+                                                </div>
+                                                <div class="deal__timing-hours deal__timing-item">
+                                                    12
+                                                </div>
+                                                <div class="deal__timing-minutes deal__timing-item">
+                                                    46
+                                                </div>
+                                                <div class="deal__timing-seconds deal__timing-item">
+                                                    01
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/The Roasted Bean.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $25.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                The Roasted Bean
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__decs">
+                                            <div class="deal__timing">
+                                                <div class="deal__timing-days deal__timing-item">
+                                                    101
+                                                </div>
+                                                <div class="deal__timing-hours deal__timing-item">
+                                                    12
+                                                </div>
+                                                <div class="deal__timing-minutes deal__timing-item">
+                                                    46
+                                                </div>
+                                                <div class="deal__timing-seconds deal__timing-item">
+                                                    01
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/porro quisquam.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-current">
+                                                    $40.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Porro quisquam
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
+                                    <div class="product-item">
+                                        <div class="product-item__decs">
+                                            <div class="deal__timing">
+                                                <div class="deal__timing-days deal__timing-item">
+                                                    101
+                                                </div>
+                                                <div class="deal__timing-hours deal__timing-item">
+                                                    12
+                                                </div>
+                                                <div class="deal__timing-minutes deal__timing-item">
+                                                    46
+                                                </div>
+                                                <div class="deal__timing-seconds deal__timing-item">
+                                                    01
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__img">
+                                            <img src="./asset/img/Japanese Strawberry.png" alt="">
+                                            <div class="product-item__rating">
+                                                <div class="product-item__rating-icon">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__button-list">
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-eye"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="far fa-heart"></i>
+                                                </div>
+                                                <div class="product-item__button-item">
+                                                    <i class="fas fa-shopping-cart"></i>
+                                                </div>
+                                            </div>
+                                            <div class="product-item__label product-item__label-sale">
+                                                <span>SALE</span>
+                                            </div>
+                                        </div>
+                                        <div class="product-item__decs">
+                                            <div class="product-item__decs-prices">
+                                                <div class="product-item__decs-price-old">
+                                                    $45.00
+                                                </div>
+                                                <div class="product-item__decs-price-current">
+                                                    $40.00
+                                                </div>
+                                            </div>
+                                            <div class="product-item__decs-name">
+                                                Japanese Strawberry
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Single Banner -->
+                    <div class="single-banners row">
+                        <div class=" col c-12">
+                            <div class="single-banner">
+                                <img src="./asset/img/single-banner_1095x200.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logo list -->
+                    <div class="logo row">
+                        <div class="col l-2 m-3 c-6 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-2 m-3 c-6 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo-2.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-2 m-3 c-0 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo-3.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-2 m-3 c-0 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo-4.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-2 m-0 c-0 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo-5.png" alt="">
+                            </a>
+                        </div>
+                        <div class="col l-2 m-0 c-0 logo-item">
+                            <a href="">
+                                <img src="./asset/img/logo-6.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- NEWS -->
+        <div class="news">
+            <div class="grid wide">
+                <div class="row">
+                    <!-- News Header -->
+                    <div class="col c-12">
+                        <div class="side-new-products-header shop-header">
+                            <div class="shop-header__title">
+                                <h2>Lastest News</h2>
+                            </div>
+                            <div class="shop-header__control">
+                                <i class="shop-header__control-left ti-angle-left"></i>
+                                <i class="ti-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- News List -->
+                    <div class="news__list  col c-12 ">
+                        <div class="row no-wrap">
+                            <!-- News Item -->
+                            <div class="news__item col l-3 m-6 c-12">
+                                <div class="news__item-img">
+                                    <img src="./asset/img/Upon of seasons dominion.png" alt="">
+                                    <div class="news__decs">
+                                        <div class="news__decs-date">
+                                            <i class="far fa-calendar-alt"></i> 19 / 8 2021
+                                        </div>
+                                        <div class="news__decs-comment">
+                                            <i class="fas fa-comment"></i> 0 Comments
+                                        </div>
+                                    </div>
+                                    <div class="news__overlay">
+
+                                    </div>
+                                </div>
+                                <div class="news__item-name">
+                                    Upon of seasons dominion
+                                </div>
+                            </div>
+                            <!-- News Item -->
+                            <div class="news__item col l-3 m-6 c-12">
+                                <div class="news__item-img">
+                                    <img src="./asset/img/Lorem ipsum dolor sit amet ipsum.png" alt="">
+                                    <div class="news__decs">
+                                        <div class="news__decs-date">
+                                            <i class="far fa-calendar-alt"></i> 19 / 8 2021
+                                        </div>
+                                        <div class="news__decs-comment">
+                                            <i class="fas fa-comment"></i> 0 Comments
+                                        </div>
+                                    </div>
+                                    <div class="news__overlay">
+
+                                    </div>
+                                </div>
+                                <div class="news__item-name">
+                                    Lorem ipsum dolor sit amet ipsum
+                                </div>
+                            </div>
+                            <!-- News Item -->
+                            <div class="news__item col l-3 m-6 c-12">
+                                <div class="news__item-img">
+                                    <img src="./asset/img/Christmas Sale is here 7.png" alt="">
+                                    <div class="news__decs">
+                                        <div class="news__decs-date">
+                                            <i class="far fa-calendar-alt"></i> 19 / 8 2021
+                                        </div>
+                                        <div class="news__decs-comment">
+                                            <i class="fas fa-comment"></i> 0 Comments
+                                        </div>
+                                    </div>
+                                    <div class="news__overlay">
+
+                                    </div>
+                                </div>
+                                <div class="news__item-name">
+                                    Christmas Sale is here 7
+                                </div>
+                            </div>
+                            <!-- News Item -->
+                            <div class="news__item col l-3 m-6 c-12">
+                                <div class="news__item-img">
+                                    <img src="./asset/img/Scelerisque vestibulum urna.png" alt="">
+                                    <div class="news__decs">
+                                        <div class="news__decs-date">
+                                            <i class="far fa-calendar-alt"></i> 19 / 8 2021
+                                        </div>
+                                        <div class="news__decs-comment">
+                                            <i class="fas fa-comment"></i> 0 Comments
+                                        </div>
+                                    </div>
+                                    <div class="news__overlay">
+
+                                    </div>
+                                </div>
+                                <div class="news__item-name">
+                                    Scelerisque vestibulum urna
+                                </div>
+                            </div>
+                            <!-- News Item -->
+                            <div class="news__item col l-3 m-6 c-12">
+                                <div class="news__item-img">
+                                    <img src="./asset/img/Upon of seasons earth.png" alt="">
+                                    <div class="news__decs">
+                                        <div class="news__decs-date">
+                                            <i class="far fa-calendar-alt"></i> 19 / 8 2021
+                                        </div>
+                                        <div class="news__decs-comment">
+                                            <i class="fas fa-comment"></i> 0 Comments
+                                        </div>
+                                    </div>
+                                    <div class="news__overlay">
+
+                                    </div>
+                                </div>
+                                <div class="news__item-name">
+                                    Upon of seasons earth
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer grid wide">
+            <!-- FOOTER Mail -->
+            <div class="footer-mail">
+                <div class="footer-mail__list row">
+                    <div class="footer-mail__item col l-4 m-6 c-12">
+                        <div class="footer-mail__item-img">
+                            <img src="./asset/img/white-logo_0f9ac4c5-d619-4ca3-b840-c1e9f7cd15ce_214x45.png" alt="">
+                        </div>
+                    </div>
+                    <div class="footer-mail__item col l-4 m-6 c-12">
+                        <div class="footer-mail__item-icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-tumblr"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="footer-mail__item col l-4 m-12 c-12">
+                        <div class="footer-mail__item-input">
+                            <div class="heading">
+                                <i class="far fa-paper-plane"></i>
+                                <span>JOIN OUR MAILING LIST</span>
+                            </div>
+                            <div class="inputs hidden-m-t">
+                                <input type="text" placeholder="Enter Your Email">
+                                <button class="btn-primary-orange">SUBSCRIBE</button>
+                            </div>
+                            <div class="inputs hidden-on-pc">
+                                <input type="text" placeholder="Enter Your Email">
+                                <button class="btn-primary-orange">GO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER Infor -->
+            <div class="footer-infor">
+                <div class="footer-list row">
+                    <!-- FOOTER Infor Left-->
+                    <div class="footer-left col l-8 m-12 c-12">
+                        <!-- FOOTER Infor Text-->
+                        <div class="footer-infor__text">
+                            <div class="row">
+                                <div class="footer-infor__text-item col l-3 m-3 c-6">
+                                    <div class="infor-text-item__header">
+                                        YOUR ACCOUNT
+                                    </div>
+                                    <ul class="infor-text-item__list">
+                                        <li class="infor-text-item__item">
+                                            Personal Info
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Orders
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Credit Slips
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Addresses
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            My Wishlists
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-infor__text-item col l-3 m-3 c-6">
+                                    <div class="infor-text-item__header">
+                                        INFORMATION
+                                    </div>
+                                    <ul class="infor-text-item__list">
+                                        <li class="infor-text-item__item">
+                                            Specials
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            New Products
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Best sellers
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Our stores
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Contact Us
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-infor__text-item col l-3 m-3 c-6">
+                                    <div class="infor-text-item__header">
+                                        PRODUCT
+                                    </div>
+                                    <ul class="infor-text-item__list">
+                                        <li class="infor-text-item__item">
+                                            Prices Drop
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            New products
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Best sellers
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Our stores
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Sitemap
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="footer-infor__text-item col l-3 m-3 c-6">
+                                    <div class="infor-text-item__header">
+                                        OUR COMPANY
+                                    </div>
+                                    <ul class="infor-text-item__list">
+                                        <li class="infor-text-item__item">
+                                            Delivery
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Legal Notice
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            About Us
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Secure payment
+                                        </li>
+                                        <li class="infor-text-item__item">
+                                            Contact us
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FOOTER Infor Privacy-->
+                        <div class="footer-privary hidden-m-t">
+                            <div class="row">
+                                <div class="footer-privary__text col c-6">
+                                    <span>
+                                © August 17 2021, Fresh Mart Powered by Linh Kook
+                            </span>
+                                </div>
+                                <div class="footer-privary__icon col c-6">
+                                    <div class="footer-privary__icon-img">
+                                        <img src="https://luatvietan.vn/wp-content/uploads/2014/07/dich-vu-visa.jpg" alt="">
+                                    </div>
+                                    <div class="footer-privary__icon-img">
+                                        <img src="https://kieutruong.com/wp-content/uploads/2019/11/huong-dan-dang-ky-tai-khoan-paypal-1024x512.jpg" alt="">
+                                    </div>
+                                    <div class="footer-privary__icon-img">
+                                        <img src="https://taichinh.online/wp-content/uploads/2017/02/the-mastercard.png" alt="">
+                                    </div>
+                                    <div class="footer-privary__icon-img">
+                                        <img src="https://seeklogo.com/images/D/Discover_Network-logo-6B25762CF6-seeklogo.com.png" alt="">
+                                    </div>
+                                    <div class="footer-privary__icon-img">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6j1rdDnYftRFDxmBsBdJ6klpGdhoQPXIg1nuba92JLTP8_ec8MXvbK0BvGf5qwsmL940&usqp=CAU" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FOOTER Infor Right-->
+                    <div class="footer-right col l-4 m-12 c-12">
+                        <ul class="footer-right__list row">
+                            <li class="footer-right__item l-12 m-4 c-12">
+                                <div class="footer-right__item-icon">
+                                    <i class="fa fa-map-marker"></i>
+                                </div>
+                                <div class="footer-right__item-body">
+                                    <p>LOCATION</p>
+                                    <span>4005 Silver Business Point</span>
+                                    <span>India</span>
+                                </div>
+                            </li>
+                            <li class="footer-right__item l-12 m-4 c-12">
+                                <div class="footer-right__item-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div class="footer-right__item-body">
+                                    <p>CONTACT US</p>
+                                    <span>1234567890</span>
+                                </div>
+                            </li>
+                            <li class="footer-right__item l-12 m-4 c-12">
+                                <div class="footer-right__item-icon">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div class="footer-right__item-body">
+                                    <p>EMAIL</p>
+                                    <span>linhlinhkook99@gmail.com</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- FOOTER Infor Privacy-->
+                <div class="footer-privary hidden-on-pc">
+                    <div class="row">
+                        <div class="footer-privary__text col m-12">
+                            <span>
+                        © August 17 2021, Fresh Mart Powered by Linh Kook
+                    </span>
+                        </div>
+                        <div class="footer-privary__icon col m-12">
+                            <div class="footer-privary__icon-img">
+                                <img src="https://luatvietan.vn/wp-content/uploads/2014/07/dich-vu-visa.jpg" alt="">
+                            </div>
+                            <div class="footer-privary__icon-img">
+                                <img src="https://kieutruong.com/wp-content/uploads/2019/11/huong-dan-dang-ky-tai-khoan-paypal-1024x512.jpg" alt="">
+                            </div>
+                            <div class="footer-privary__icon-img">
+                                <img src="https://taichinh.online/wp-content/uploads/2017/02/the-mastercard.png" alt="">
+                            </div>
+                            <div class="footer-privary__icon-img">
+                                <img src="https://seeklogo.com/images/D/Discover_Network-logo-6B25762CF6-seeklogo.com.png" alt="">
+                            </div>
+                            <div class="footer-privary__icon-img">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6j1rdDnYftRFDxmBsBdJ6klpGdhoQPXIg1nuba92JLTP8_ec8MXvbK0BvGf5qwsmL940&usqp=CAU" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- OverLay Modal -->
+        <div class="overlay-begin close">
+            <div class="modal">
+                <div class="modal__img">
+                    <img src="./asset/img/files_contact_d5b60ddc-f426-43fc-9204-119d3c641862.png.png" alt="">
+                </div>
+                <div class="modal__decs">
+                    <div class="modal__decs-heading">
+                        SUBSCRIBE AND GET DISCOUNT!
+                    </div>
+                    <div class="modal__decs-text">
+                        Subscribe to the newsletter to receive updates about new products.
+                    </div>
+                    <div class="search__inputs">
+                        <input type="text" placeholder="Enter Your Email">
+                        <button class="search__button">
+                        SUBSCRIBE
+                    </button>
+                    </div>
+                    <div class="modal__decs-icons">
+                        <div class="footer-mail__item-icon">
+                            <i class="fab fa-facebook-f"></i>
+                            <i class="fab fa-twitter"></i>
+                            <i class="fab fa-pinterest-p"></i>
+                            <i class="fab fa-instagram"></i>
+                            <i class="fab fa-tumblr"></i>
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                    <div class="modal__decs-checkbox">
+                        <input type="checkbox" name="" id="">
+                        <span>Don't show again</span>
+                    </div>
+                    <div id="modal_close" class="modal__btn-close">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Button scroll to Top -->
+        <div id="btnScrollToTop" class="croll-to-top">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <!-- Menu Mobile & Ipad -->
+        <div class="soft__menu hidden-on-pc close">
+            <ul class="soft__menu-list">
+                <li class="soft__menu-item">
+                    <a href="#">
+                    Organic
+                    <i class="ti-angle-right"></i>
+                    <i class="ti-angle-down close"></i>
+                </a>
+                    <div class="soft__menu-item-one">
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Fruits
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Peach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kiwi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Apple
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Spinach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Dry fruits
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!-- Side Menu Soft List-->
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Vegetables
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Cucumber
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Cherry tomatoes
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Broccoli
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Artichoke
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kohlrabi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side Menu Soft List-->
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Organic Products
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Dry fruits
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Dairy products
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Beverages
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Peach fruits
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Nectarines
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Peach
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">Blogs</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">Collection</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#" class="">
+                    Accessories
+                    <i class="ti-angle-right"></i>
+                    <i class="ti-angle-down close"></i>
+                </a>
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Vegetables
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Cucumber
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Cherry tomatoes
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Broccoli
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Artichoke
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kohlrabi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side Bar Soft List-->
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Fruits
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Peach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kiwi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Apple
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Spinach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Dry fruits
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">
+                    Include Pages
+                    <i class="ti-angle-right"></i>
+                    <i class="ti-angle-down close"></i>
+                </a>
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Pages
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Wishlist
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    404
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Contact
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Blog
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">About Us</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">
+                    Category
+                    <i class="ti-angle-right"></i>
+                    <i class="ti-angle-down close"></i>
+                </a>
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Fruits
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Peach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kiwi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Apple
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Spinach
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Dry fruits
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Side Bar Soft List-->
+                    <div class="soft__menu-item-one">
+                        <!-- Side Bar Soft List Header-->
+                        <div class="soft__menu-item-second">
+                            <div class="x">
+                                Vegetables
+                                <i class="ti-angle-right"></i>
+                                <i class="ti-angle-down close"></i>
+                            </div>
+                            <ul class="soft__menu-item-thirst">
+                                <li class="soft__menu-item-thirst-item">
+                                    Cucumber
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Cherry tomatoes
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Broccoli
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Artichoke
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Kohlrabi
+                                </li>
+                                <li class="soft__menu-item-thirst-item">
+                                    Celery
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">FAQs</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">Fruits</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">Vegetables</a>
+                </li>
+                <li class="soft__menu-item">
+                    <a href="#">Peach</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="./asset/js/main.js"></script>
+
+</html>
