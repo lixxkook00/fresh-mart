@@ -1930,3 +1930,122 @@
     line-height: 4rem;
     color: white;
 }
+
+
+/* Cart Pop Up PC */
+
+.search__infor-item--cart {
+    position: relative;
+}
+
+.search__infor-item--cart:hover .soft__bag-cart {
+    display: block;
+}
+
+.soft__bag-cart:hover {
+    cursor: default
+}
+
+.soft__bag-cart {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    width: 30vw;
+    border: 1px solid #EEE;
+    font-size: 1.6rem;
+    display: none;
+    transition: all .2s;
+    animation: growth linear .2s;
+}
+
+@keyframes growth {
+    from {
+        opacity: 0;
+        transform: scaleY(0.5);
+        transform-origin: top right;
+    }
+    to {
+        opacity: 1;
+        transform: scaleY(1);
+        transform-origin: top right;
+    }
+}
+
+.soft__bag-cart::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    height: 20px;
+    width: 100%;
+}
+
+.soft__bag-cart .soft__bag-product-item {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    padding: 5px 10px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.soft__bag-cart .soft__bag-product-item:hover {
+    background-color: rgb(242, 240, 240);
+    cursor: pointer;
+}
+
+.soft__bag-cart .soft__bag-item-img {
+    width: 81px;
+    height: 81px;
+    border: 1px solid #EEE;
+    margin-right: 10px;
+}
+
+.soft__bag-cart .soft__bag-item-img img {
+    width: 100%;
+}
+
+.soft__bag-cart .soft__bag-item-decs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+}
+
+.soft__bag-cart .soft__bag-product-item-btndelete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.soft__bag-cart .soft__bag-product-item-btndelete i {
+    font-size: 2rem;
+}
+
+.soft__bag-cart .soft__bag-total {
+    padding: 20px 0;
+    line-height: 2.8rem;
+    padding: 5px 10px;
+}
+
+.soft__bag-cart .soft__bag-total-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.soft__bag-cart .soft__bag-total-decs span {
+    font-style: italic;
+}
+
+.soft__bag-cart .soft__bag-buttons {
+    display: flex;
+    padding: 10px 10px;
+    justify-content: flex-end;
+}
+
+.soft__bag-cart .soft__bag-buttons button {
+    margin-right: 10px;
+}
