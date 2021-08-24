@@ -432,6 +432,18 @@
     .modal__decs {
         flex: 1;
     }
+    .soft__menu-list {
+        position: relative;
+    }
+    .soft__menu-btn-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .soft__menu-btn-close i {
+        font-size: 2.2rem;
+        padding: 10px;
+    }
 }
 
 
@@ -589,6 +601,32 @@
     }
     .search__button {
         padding: 0;
+    }
+    .modal .search__button {
+        padding: 0 12px;
+    }
+    .modal {
+        width: 90vw;
+    }
+    .footer-mail__item-icon {
+        justify-content: space-between;
+    }
+    .deal__timing-item {
+        width: 35px;
+    }
+    .footer-mail__item {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+    .footer-mail__item:first-child {
+        background-color: var(--primary-green);
+    }
+    .footer-mail .footer-mail__item-icon {
+        width: 80%;
+    }
+    .soft__menu-list {
+        padding-top: 50px;
     }
 }
 

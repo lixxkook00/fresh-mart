@@ -16,6 +16,7 @@ const btnCloseModal = document.querySelector('#modal_close');
 const btnScrollToTop = document.querySelector('#btnScrollToTop');
 
 const btnMenuSoft = document.querySelector('#menuSoft');
+const btnCloseMenuSoft = document.querySelector('#btnCloseSoftMenu');
 
 // Element
 const listNewProduct = document.querySelectorAll('.new-products__list-wides');
@@ -133,6 +134,10 @@ overLay.onclick = function() {
 }
 Modal.onclick = function(event) {
     event.stopPropagation();
+}
+btnCloseMenuSoft.onclick = function() {
+    menuOverlay.classList.add('close');
+    console.log('check')
 }
 
 // Scroll to Top
