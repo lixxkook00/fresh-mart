@@ -425,6 +425,13 @@
         align-items: center;
         text-align: center;
     }
+    .modal {
+        width: 80vw;
+        z-index: 100;
+    }
+    .modal__decs {
+        flex: 1;
+    }
 }
 
 
@@ -575,6 +582,13 @@
     .header-search-soft {
         background-color: #fff;
         z-index: 100;
+    }
+    .modal__decs {
+        width: 80vw;
+        margin-left: 0;
+    }
+    .search__button {
+        padding: 0;
     }
 }
 
