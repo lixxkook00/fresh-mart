@@ -230,6 +230,6 @@ function myFunction() {
 
 for (let i = 0; i < detailRedirect.length; i++) {
     detailRedirect[i].onclick = function() {
-        window.location.href = "detail-product.html"
+        window.location.href = "./detail-product.html"
     }
 }

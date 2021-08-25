@@ -151,5 +151,5 @@ quantityPlus.onclick = function() {
 }
 
 btnBackToVegetable.onclick = function() {
-    window.location.pathname = "./index.html"
+    window.location.href = "./index.html"
 }
