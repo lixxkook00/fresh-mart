@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./asset/css/grid.css">
     <link rel="stylesheet" href="./asset/css/base.css">
     <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/detail-product.css">
     <link rel="stylesheet" href="./asset/css/responsive.css">
     <title>Fresh Mart</title>
 </head>
@@ -759,917 +760,228 @@
                         </li>
                     </ul>
                     <!-- Side Banner -->
-                    <div class="side-banner m-12 c-12">
+                    <div class="side-banner m-12 c-12 hidden-m-t">
                         <img src="./asset/img/Left_Banner_345x417.png" alt="">
-                    </div>
-                    <!-- Side New products -->
-                    <div class="side-new-products">
-                        <!-- Side New products Header-->
-                        <div class="side-new-products-header shop-header">
-                            <div class="shop-header__title">
-                                <h2>New Products</h2>
-                            </div>
-                            <div class="shop-header__control">
-                                <i id="btnPrevNewProduct" class="shop-header__control-left ti-angle-left"></i>
-                                <i id="btnNextNewProduct" class="ti-angle-right"></i>
-                            </div>
-                        </div>
-                        <!-- Side New products List-->
-                        <div class="new-products__list">
-                            <div class="new-products__list-wide new-products__list-wides">
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/The Watermalen.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            The Wartermalen
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $55.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $52.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Sed at nunc quis.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Sed at nunc quis
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $42.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/porro quisquam.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Porro quisquam
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Consectetur adipiscing.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Consectetur Apple Banana
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Side New products List-->
-                            <div class="new-products__list-wide new-products__list-wides">
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Fusce fermentum.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Fusce fermentum
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $55.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $50.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Organic Chilli.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Organic Chilli
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $42.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Japanese Strawberry.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Japanese Strawberry
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $45.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Fresh Vagitables.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Fresh Vagitables
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $38.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $35.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Side Customer Feedback -->
-                    <div class="side-customer-feedback">
-                        <!-- Side Customer Feedback Header-->
-                        <div class="customer__header shop-header">
-                            <div class="shop-header__title">
-                                <h2>Our Client Say</h2>
-                            </div>
-                            <div class="shop-header__control">
-                                <i id="btnPrevCustomer" class="shop-header__control-left ti-angle-left"></i>
-                                <i id="btnNextCustomer" class="ti-angle-right"></i>
-                            </div>
-                        </div>
-                        <!-- Side Customer Feedback List-->
-                        <div class="customer__list">
-                            <div class="customer__list-wide">
-                                <!-- Side Customer Feedback Item -->
-                                <div class="customer__item col l-12 m-12 c-12">
-                                    <div class="customer__icon">
-                                        <i class="fas fa-comments"></i>
-                                    </div>
-                                    <div class="customer__body">
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
-                                        </p>
-                                    </div>
-                                    <div class="customer__avt">
-                                        <img src="./asset/img/customer.png" alt="">
-                                    </div>
-                                    <div class="customer__info">
-                                        <span class="customer__infor-name">
-                                        John Doe
-                                    </span>
-                                        <span class="customer__infor-job">
-                                        Web Designer
-                                    </span>
-                                    </div>
-                                </div>
-                                <!-- Side Customer Feedback Item -->
-                                <div class="customer__item col l-12 m-12 c-12">
-                                    <div class="customer__icon">
-                                        <i class="fas fa-comments"></i>
-                                    </div>
-                                    <div class="customer__body">
-                                        <p>
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
-                                        </p>
-                                    </div>
-                                    <div class="customer__avt">
-                                        <img src="./asset/img/customer-2.png" alt="">
-                                    </div>
-                                    <div class="customer__info">
-                                        <span class="customer__infor-name">
-                                        John Doe
-                                    </span>
-                                        <span class="customer__infor-job">
-                                        Web Designer
-                                    </span>
-                                    </div>
-                                </div>
-                                <!-- Side Customer Feedback Item -->
-                                <!-- <div class="customer__item col l-4 m-4">
-                                <div class="customer__icon">
-                                    <i class="fas fa-comments"></i>
-                                </div>
-                                <div class="customer__body">
-                                    <p>
-                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.
-                                    </p>
-                                </div>
-                                <div class="customer__avt">
-                                    <img src="./asset/img/customer-3.png" alt="">
-                                </div>
-                                <div class="customer__info">
-                                    <span class="customer__infor-name">
-                                        John Doe
-                                    </span>
-                                    <span class="customer__infor-job">
-                                        Web Designer
-                                    </span>
-                                </div>
-                            </div> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Side Best Sellers product -->
-                    <div class="side-new-products">
-                        <!-- Side New products Header-->
-                        <div class="side-new-products-header shop-header">
-                            <div class="shop-header__title">
-                                <h2>Top Best Seller</h2>
-                            </div>
-                            <div class="shop-header__control">
-                                <i id="btnPrevBestSeller" class="shop-header__control-left ti-angle-left"></i>
-                                <i id="btnNextBestSeller" class="ti-angle-right"></i>
-                            </div>
-                        </div>
-                        <!-- Side New products List-->
-                        <div class="new-products__list">
-                            <!-- Side New products List-->
-                            <div class="new-products__list-wide new-products__list-wide--best-seller">
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Fusce fermentum.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Fusce fermentum
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $55.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $50.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Organic Chilli.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Organic Chilli
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $42.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Japanese Strawberry.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Japanese Strawberry
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $45.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Fresh Vagitables.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Fresh Vagitables
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $38.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $35.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="new-products__list-wide new-products__list-wide--best-seller">
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/The Watermalen.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            The Wartermalen
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-                                            <div class="product-item__decs-price-old">
-                                                $55.00
-                                            </div>
-                                            <div class="product-item__decs-price-current">
-                                                $52.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Sed at nunc quis.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Sed at nunc quis
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $42.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/porro quisquam.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Porro quisquam
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Side New products Item-->
-                                <div class="new-products__item col c-6">
-                                    <div class="new-products__item-img">
-                                        <img src="./asset/img/Consectetur adipiscing.png" alt="">
-                                    </div>
-                                    <div class="new-products__item-decs">
-                                        <div class="new-products__item-decs-name product-item__decs-name">
-                                            Consectetur Apple Banana
-                                        </div>
-                                        <div class="new-products__item-decs-prices product-item__decs-prices">
-
-                                            <div class="product-item__decs-price-current">
-                                                $40.00
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <!-- MAIN CONTAINER -->
                 <div class="container-body col l-9 m-12">
-                    <!-- Silde show banner -->
-                    <div class="slide-shows row ">
-                        <div class="silde-show col c-12">
-                            <div class="slide-show__wide no-wrap row">
-                                <!-- Silde show banner item-->
-                                <div class="slide-show__item col c-12 m-12">
-                                    <img class="container__banner-img" src="./asset/img/banner.png" alt="">
-                                    <!-- Silde show banner label-->
-                                    <div class="slide-show__label">
-                                        <div class="label__sub">BIG SALE</div>
-                                        <div class="label__main">
-                                            <h2>Organic Mart</h2>
-                                        </div>
-                                        <div class="label__desc">
-                                            <p>Save Upto 50% Off On Your First Order</p>
-                                        </div>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                                <!-- Silde show banner item-->
-                                <div class="slide-show__item col c-12 m-12">
-                                    <img class="container__banner-img" src="./asset/img/fruit1_2048x.png" alt="">
-                                    <!-- Silde show banner label-->
-                                    <div class="slide-show__label left">
-                                        <div class="label__sub"> FRESH FRUITS</div>
-                                        <div class="label__main">
-                                            <h2>Big Discount</h2>
-                                        </div>
-                                        <div class="label__desc">
-                                            <p>Save Upto 50% Off On Your First Order</p>
-                                        </div>
-                                        <button>SHOP NOW</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Silde show banner dots-->
-                        <div class="slide-show__control-dots">
-                            <div class="slide-show__control-dot-item active">
-                            </div>
-                            <div class="slide-show__control-dot-item">
-                            </div>
-                        </div>
-                        <!-- Silde show banner control-->
-                        <div class="slide-show__control">
-                            <div id="slide-show-prev" class="slide-show__control-item slide-show__control-item--left">
-                                <i class="fas fa-chevron-left"></i>
-                            </div>
-                            <div id="slide-show-next" class="slide-show__control-item slide-show__control-item--right">
-                                <i class="fas fa-chevron-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Services -->
-                    <div class="row services">
-                        <div class=" col l-4 m-4 c-12">
-                            <div class="service__item">
-                                <div class="service__item-img">
-                                    <img src="./asset/img/service-lock.png" alt="">
-                                </div>
-                                <div class="service__item-text">
-                                    <div class="service__item-text-heading">
-                                        SECURE PAYMENT
-                                    </div>
-                                    <div class="service__item-text-decs">
-                                        Lorem ipsum Dolor Site Amet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col l-4 m-4 c-12">
-                            <div class="service__item">
-                                <div class="service__item-img">
-                                    <img src="./asset/img/service-gift.png" alt="">
-                                </div>
-                                <div class="service__item-text">
-                                    <div class="service__item-text-heading">
-                                        MONEY BACKWARD
-                                    </div>
-                                    <div class="service__item-text-decs">
-                                        Lorem ipsum Dolor Site Amet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class=" col l-4 m-4 c-12">
-                            <div class="service__item">
-                                <div class="service__item-img">
-                                    <img src="./asset/img/service-headphone.png" alt="">
-                                </div>
-                                <div class="service__item-text">
-                                    <div class="service__item-text-heading">
-                                        OUR SERVICE
-                                    </div>
-                                    <div class="service__item-text-decs">
-                                        Lorem ipsum Dolor Site Amet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <!-- Shop section -->
                     <div class="row shop-section">
-                        <!-- Shope Title -->
-                        <div class="col c-12">
+                        <!-- Header Detail Product -->
+                        <div class="col l-12 m-12 c-12">
+                            <div class="detail__header">
+                                <div class="detail__header-name">
+                                    Vis feugiat delenit
+                                </div>
+                                <div class="detail__header-link">
+                                    <div class="detail__header-link-item">
+                                        Home
+                                    </div>
+                                    <span>-</span>
+                                    <div class="detail__header-link-item">
+                                        Vegetables
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="detail__img">
+                                <div class="detail__img-main">
+                                    <img src="./asset/img/Vis feugiat delenit.png" alt="">
+                                </div>
+                                <div class="detail__img-list">
+                                    <div class="detail__img-list-item col c-3">
+                                        <img src="./asset/img/Fresh Vagitables.png" alt="">
+                                    </div>
+                                    <div class="detail__img-list-item col c-3">
+                                        <img src="./asset/img/Consectetur adipiscing.png" alt="">
+                                    </div>
+                                    <div class="detail__img-list-item col c-3">
+                                        <img src="./asset/img/Organic Chilli.png" alt="">
+                                    </div>
+                                    <div class="detail__img-list-item col c-3">
+                                        <img src="./asset/img/organic Banana.png" alt="">
+                                    </div>
+                                    <i class="detail__img-controls detail__img-controls-left far fa-arrow-alt-circle-left"></i>
+                                    <i class="detail__img-controls detail__img-controls-right far fa-arrow-alt-circle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="detail__decs">
+                                <div class="detail__decs-name">
+                                    Vis Feugiat Delenit
+                                </div>
+                                <div class="detail__decs-rating">
+                                    <div class="rating__start">
+                                        <div class="product-item__rating-icon">
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <span>No review yet.</span>
+                                    <a href="#">Write Review</a>
+                                </div>
+                                <div class="detail__decs-price">
+                                    $30.00
+                                </div>
+                                <div class="detail__decs-type">
+                                    <div class="type__item">
+                                        <div class="type__item-name">
+                                            Vendor :
+                                        </div>
+                                        <div class="type__item-content">
+                                            Freshmart Sectioned.
+                                        </div>
+                                    </div>
+                                    <div class="type__item">
+                                        <div class="type__item-name">
+                                            Product Type :
+                                        </div>
+                                        <div class="type__item-content">
+                                            Organic
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail__decs-tools">
+                                    <div class="tools__item">
+                                        <i class="fas fa-heart"></i>
+                                        <a href="">View Wishlist</a>
+                                    </div>
+                                    <div class="tools__item">
+                                        <i class="fas fa-ruler-horizontal"></i>
+                                        <a href="">Size Chart</a>
+                                    </div>
+                                </div>
+                                <div class="detail__decs-countdonw">
+                                    <div class="countdown__text">
+                                        Hurry! Only
+                                        <span class="countdown-number">
+                                           3   
+                                        </span> units left in stock!
+                                    </div>
+                                    <div class="countdown__bar">
+                                        <div class="countdown__bar-process"></div>
+                                    </div>
+                                </div>
+                                <div class="detail__decs-quantity">
+                                    <div class="quantity__text">
+                                        Units
+                                    </div>
+                                    <div class="quantity__controls">
+                                        <div class="quantity__item quantity__minus">
+                                            -
+                                        </div>
+                                        <div class="quantity__item quantity__result">
+                                            1
+                                        </div>
+                                        <div class="quantity__item quantity__plus">
+                                            +
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="detail__decs-buttons">
+                                    <button class="btn btn-primary-green">
+                                        Buy It Now
+                                    </button>
+                                    <button class="btn btn-primary-orange">
+                                        Add to cart
+                                    </button>
+                                </div>
+                                <div class="detail__decs-icons">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-pinterest-p"></i>
+                                    <i class="fab fa-instagram"></i>
+                                    <i class="fab fa-tumblr"></i>
+                                    <i class="fab fa-youtube"></i>
+                                </div>
+                                <div class="detail__decs-trusted">
+                                    <img src="./asset/img/trusted-image_387x42.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Review -->
+                        <div class="col c-12 margin-top-20px">
                             <div class="shop-header">
-                                <div class="shop-header__title">
-                                    <h2>Trending Products</h2>
+                                <div class="shop-header__title review__header">
+                                    <h2>REVIEW</h2>
                                 </div>
                                 <div class="shop-header__control">
-                                    <i class="ti-angle-left"></i>
-                                    <i class="ti-angle-right"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Shop Product Tab -->
-                        <div class="col c-12">
-                            <div class="shop-tab">
-                                <div class="shop-tab__item shop-tab__item--acive">
-                                    Featured
-                                </div>
-                                <div class="shop-tab__item">
-                                    Latest
-                                </div>
-                                <div class="shop-tab__item">
-                                    Best Sellers
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Shop product list -->
-                        <div class="col c-12">
-                            <div class="row product-list">
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/Consectetur adipiscing.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star voted"></i>
-                                                    <i class="fas fa-star voted"></i>
-                                                    <i class="fas fa-star voted"></i>
-                                                    <i class="fas fa-star voted"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $30.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Vis feugiat delenit
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/The Roasted Bean.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $25.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                The Roasted Bean
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/porro quisquam.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $40.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Porro quisquam
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/Japanese Strawberry.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__label product-item__label-sale">
-                                                <span>SALE</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-old">
-                                                    $45.00
-                                                </div>
-                                                <div class="product-item__decs-price-current">
-                                                    $40.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Japanese Strawberry
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/The Watermalen.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__label product-item__label-sale">
-                                                <span>SALE</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-old">
-                                                    $55.00
-                                                </div>
-                                                <div class="product-item__decs-price-current">
-                                                    $52.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                The Watermalen
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/Sed at nunc quis.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $42.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Sed at nunc quis
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/Organic Chilli.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__label product-item__label-soldout">
-                                                <span>SOLD OUT</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $42.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Organic Chilli
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col l-3 m-6 c-6 padding-top-bottom-15px">
-                                    <div class="product-item">
-                                        <div class="product-item__img">
-                                            <img src="./asset/img/Fusce fermentum.png" alt="">
-                                            <div class="product-item__rating">
-                                                <div class="product-item__rating-icon">
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
-                                                    <i class="far fa-eye"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="far fa-heart"></i>
-                                                </div>
-                                                <div class="product-item__button-item">
-                                                    <i class="fas fa-shopping-cart"></i>
-                                                </div>
-                                            </div>
-                                            <div class="product-item__label product-item__label-sale">
-                                                <span>SALE</span>
-                                            </div>
-                                        </div>
-                                        <div class="product-item__decs">
-                                            <div class="product-item__decs-prices">
-                                                <div class="product-item__decs-price-current">
-                                                    $50.00
-                                                </div>
-                                            </div>
-                                            <div class="product-item__decs-name">
-                                                Fusce fermentum
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Blog banner -->
-                        <div class="col c-12">
-                            <div class="blog">
-                                <!-- <img src="./asset/img/storyblock.png" alt=""> -->
-                                <div class="blog__text col l-6 m-12">
-                                    <div class="blog__text-header">
-                                        All Seasonal Fruits
-                                    </div>
-                                    <div class="blog__text-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                    </div>
-                                    <div class="blog__text-btns">
-                                        <button class="blog__text-btn btn-primary-orange">
-                                        READ MORE
+                                    <button class="btn btn-primary-orange">
+                                        Write Review
                                     </button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ads banner -->
-                        <div class=" col c-12 ">
-                            <div class="ads row">
-                                <div class="col l-6 m-6 c-12">
-                                    <div class="ads-item">
-                                        <a href="">
-                                            <img src="./asset/img/ads-banner.png" alt="">
-                                        </a>
+                        <div class=" col l-12 m-12 c-12">
+                            <div class="review">
+                                <div class="review__item">
+                                    <div class="review__rating">
+                                        <div class="product-item__rating-icon">
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="review__time">
+                                            Linh on Aug 24, 2021
+                                        </div>
+                                    </div>
+                                    <div class="review__type">
+                                        Good
                                     </div>
 
-                                </div>
-                                <div class="col l-6 m-6 c-12">
-                                    <div class="ads-item">
-                                        <a href="">
-                                            <img src="./asset/img/ads-banner-2.png" alt="">
-                                        </a>
+                                    <div class="review___body">
+                                        Best Fruit Ever
                                     </div>
+                                    <a href="" class="review__link-report">
+                                    Report as Inappropriate
+                                </a>
+                                </div>
+                                <div class="review__item">
+                                    <div class="review__rating">
+                                        <div class="product-item__rating-icon">
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                            <i class="fas fa-star voted"></i>
+                                        </div>
+                                        <div class="review__time">
+                                            Dung on Aug 25, 2021
+                                        </div>
+                                    </div>
+                                    <div class="review__type">
+                                        Delicious
+                                    </div>
+
+                                    <div class="review___body">
+                                        Best Service !!! Better than your ex.
+                                    </div>
+                                    <a href="" class="review__link-report">
+                                    Report as Inappropriate
+                                </a>
                                 </div>
                             </div>
                         </div>
+
+                        <div class="buttons-back col l-12 m-12 c-12">
+                            <button id="backToMainPage" class="btn btn-primary-orange">
+                                <i class="fas fa-angle-double-left"></i>
+                                BACK TO VEGETABLES
+                            </button>
+                        </div>
+
                         <!-- Deal of the day -->
                         <!-- Deal of the day Header-->
-                        <div class="col c-12">
+                        <div class="col c-12 margin-top-20px">
                             <div class="shop-header">
                                 <div class="shop-header__title">
                                     <h2>Deal Of The Day</h2>
@@ -1713,7 +1025,7 @@
                                                 </div>
                                             </div>
                                             <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
+                                                <div class="product-item__button-item">
                                                     <i class="far fa-eye"></i>
                                                 </div>
                                                 <div class="product-item__button-item">
@@ -1766,7 +1078,7 @@
                                                 </div>
                                             </div>
                                             <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
+                                                <div class="product-item__button-item">
                                                     <i class="far fa-eye"></i>
                                                 </div>
                                                 <div class="product-item__button-item">
@@ -1819,7 +1131,7 @@
                                                 </div>
                                             </div>
                                             <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
+                                                <div class="product-item__button-item">
                                                     <i class="far fa-eye"></i>
                                                 </div>
                                                 <div class="product-item__button-item">
@@ -1872,7 +1184,7 @@
                                                 </div>
                                             </div>
                                             <div class="product-item__button-list">
-                                                <div class="product-item__button-item product-item__button-item--view">
+                                                <div class="product-item__button-item">
                                                     <i class="far fa-eye"></i>
                                                 </div>
                                                 <div class="product-item__button-item">
@@ -1902,47 +1214,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <!-- Single Banner -->
-                    <div class="single-banners row">
-                        <div class=" col c-12">
-                            <div class="single-banner">
-                                <img src="./asset/img/single-banner_1095x200.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Logo list -->
-                    <div class="logo row">
-                        <div class="col l-2 m-3 c-6 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col l-2 m-3 c-6 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo-2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col l-2 m-3 c-0 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo-3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col l-2 m-3 c-0 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo-4.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col l-2 m-0 c-0 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo-5.png" alt="">
-                            </a>
-                        </div>
-                        <div class="col l-2 m-0 c-0 logo-item">
-                            <a href="">
-                                <img src="./asset/img/logo-6.png" alt="">
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -2299,48 +1570,6 @@
                 </div>
             </div>
         </footer>
-        <!-- OverLay Modal -->
-        <div class="overlay-begin">
-            <div class="modal">
-                <div class="modal__img hidden-m-t">
-                    <img src="./asset/img/files_contact_d5b60ddc-f426-43fc-9204-119d3c641862.png.png" alt="">
-                </div>
-                <div class="modal__decs">
-                    <div class="modal__decs-heading">
-                        SUBSCRIBE AND GET DISCOUNT!
-                    </div>
-                    <div class="modal__decs-text">
-                        Subscribe to the newsletter to receive updates about new products.
-                    </div>
-                    <div class="search__inputs">
-                        <input type="text" placeholder="Enter Your Email">
-                        <button class="search__button hidden-m">
-                        SUBSCRIBE
-                        </button>
-                        <button class="search__button hidden-on-pc hide-pc-low hidden-t">
-                            GO
-                        </button>
-                    </div>
-                    <div class="modal__decs-icons">
-                        <div class="footer-mail__item-icon">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-pinterest-p"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-tumblr"></i>
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                    </div>
-                    <div class="modal__decs-checkbox">
-                        <input type="checkbox" name="" id="">
-                        <span>Don't show again</span>
-                    </div>
-                    <div id="modal_close" class="modal__btn-close">
-                        <i class="fas fa-times"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Button scroll to Top -->
         <div id="btnScrollToTop" class="croll-to-top">
             <i class="fas fa-chevron-up"></i>
@@ -2642,6 +1871,6 @@
         </div>
     </div>
 </body>
-<script src="./asset/js/main.js"></script>
+<script src="./asset/js/detail.js"></script>
 
 </html>

@@ -33,6 +33,8 @@ const menuSecond = document.querySelectorAll('.soft__menu-item-second')
 const menuThird = document.querySelectorAll('.soft__menu-item-thirst')
 const menuOverlay = document.querySelector('.soft__menu')
 const softMenu = document.querySelector('.soft__menu-list')
+const detailRedirect = document.querySelectorAll('.product-item__button-item--view')
+const detailImgs = document.querySelectorAll('.detail__img-list-item img')
 
 // Next/Prev Side Menu  
 nextListItem = (btn, listElement) => {
@@ -222,5 +224,12 @@ function myFunction() {
         header.classList.add("sticky");
     } else {
         header.classList.remove("sticky");
+    }
+}
+// Redirection Detail Page
+
+for (let i = 0; i < detailRedirect.length; i++) {
+    detailRedirect[i].onclick = function() {
+        window.location.pathname = "./detail-product.html"
     }
 }
