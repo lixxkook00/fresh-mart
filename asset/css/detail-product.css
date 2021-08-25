@@ -336,6 +336,10 @@ a {
         width: 50%;
         padding: 10px 0;
     }
+    .detail__decs-icons {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 
