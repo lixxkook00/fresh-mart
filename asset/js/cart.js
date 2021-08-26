@@ -14,13 +14,17 @@ const btnCloseMenuSoft = document.querySelector('#btnCloseSoftMenu');
 const detailImgs = document.querySelectorAll('.detail__img-list-item img')
 const detailImgMain = document.querySelector('.detail__img-main img')
 
+const btnEditQuantityMobile = document.querySelectorAll('.cart__item-btn-edit')
+const btnDeleteItemList = document.querySelectorAll('.far.fa-trash-alt')
 
-const quantityMinus = document.querySelector('.quantity__minus')
-const quantityPlus = document.querySelector('.quantity__plus')
-const quantityResult = document.querySelector('.quantity__result')
+const quantityMinus = document.querySelectorAll('.quantity__minus')
+const quantityPlus = document.querySelectorAll('.quantity__plus')
+const quantityResult = document.querySelectorAll('.quantity__result')
 
 const btnBackToVegetable = document.querySelector('#backToMainPage')
 
+const totalPriceCart = document.querySelector('.subtotal__header-price')
+const totalListPrice = document.querySelectorAll('.cart__item-total')
 
 // Scroll to Top
 btnScrollToTop.onclick = function() {
@@ -109,5 +113,78 @@ function myFunction() {
         header.classList.add("sticky");
     } else {
         header.classList.remove("sticky");
+    }
+}
+
+// Edit Quantity Mobile
+
+
+for (let i = 0; i < btnEditQuantityMobile.length; i++) {
+    var stateQuanityPopup = false;
+    btnEditQuantityMobile[i].onclick = function() {
+        if (stateQuanityPopup === false) {
+            btnEditQuantityMobile[i]
+                .parentNode.parentNode.children[1]
+                .classList.add('open');
+            stateQuanityPopup = true;
+        } else {
+            btnEditQuantityMobile[i]
+                .parentNode.parentNode.children[1]
+                .classList.remove('open');
+            stateQuanityPopup = false;
+        }
+    }
+}
+
+// Quantity Controls
+getTotal = (element) => {
+    return element.parentNode.parentNode.parentNode.children[4].innerText;
+}
+getPrice = (element) => {
+    return element.parentNode.parentNode.parentNode.children[2].innerText;
+}
+
+calcTotal = (element) => {
+    let price = parseInt(getPrice(element).substring(1))
+    let quantity = parseInt(element.innerText)
+    let total = price * quantity
+    if (total > 0) {
+        element.parentNode.parentNode.parentNode.children[4].innerText = `$${total}.00`
+
+    } else {
+        element.parentNode.parentNode.parentNode.children[4].innerText = `$0.00`
+        element.innerText = '0'
+    }
+}
+
+for (let i = 0; i < quantityMinus.length; i++) {
+    quantityMinus[i].onclick = function() {
+        quantityResult[i].innerText = parseInt(quantityResult[i].innerText) - 1
+        calcTotal(quantityResult[i])
+        getTotalPriceCart()
+    }
+}
+for (let i = 0; i < quantityPlus.length; i++) {
+    quantityPlus[i].onclick = function() {
+        quantityResult[i].innerText = parseInt(quantityResult[i].innerText) + 1
+        calcTotal(quantityResult[i])
+        getTotalPriceCart()
+    }
+}
+
+// Total Price Cart
+getTotalPriceCart = () => {
+    var sum = 0;
+    for (let i = 0; i < totalListPrice.length; i++) {
+        sum = sum + parseInt(totalListPrice[i].innerText.substring(1))
+    }
+    totalPriceCart.innerText = `$${sum}.00`
+}
+getTotalPriceCart()
+
+// Delete Item Cart
+for (let i = 0; i < btnDeleteItemList.length; i++) {
+    btnDeleteItemList[i].onclick = function() {
+        console.log(btnDeleteItemList[i].parentNode.parentNode.classList.add('close'))
     }
 }
