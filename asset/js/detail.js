@@ -20,6 +20,8 @@ const quantityPlus = document.querySelector('.quantity__plus')
 const quantityResult = document.querySelector('.quantity__result')
 
 const btnBackToVegetable = document.querySelector('#backToMainPage')
+const btnCart = document.querySelectorAll('.btn-cart--click');
+
 
 // Scroll to Top
 btnScrollToTop.onclick = function() {
@@ -152,4 +154,12 @@ quantityPlus.onclick = function() {
 
 btnBackToVegetable.onclick = function() {
     window.location.href = "./index.html"
+}
+
+
+// Button Cart
+for (let i = 0; i < btnCart.length; i++) {
+    btnCart[i].onclick = function() {
+        window.location.href = "./cart.html"
+    }
 }

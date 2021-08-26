@@ -18,6 +18,8 @@ const btnScrollToTop = document.querySelector('#btnScrollToTop');
 const btnMenuSoft = document.querySelector('#menuSoft');
 const btnCloseMenuSoft = document.querySelector('#btnCloseSoftMenu');
 
+const btnCart = document.querySelectorAll('.btn-cart--click');
+
 // Element
 const listNewProduct = document.querySelectorAll('.new-products__list-wides');
 const listBestSeller = document.querySelectorAll('.new-products__list-wide--best-seller');
@@ -231,5 +233,12 @@ function myFunction() {
 for (let i = 0; i < detailRedirect.length; i++) {
     detailRedirect[i].onclick = function() {
         window.location.href = "./detail-product.html"
+    }
+}
+
+// Button Cart
+for (let i = 0; i < btnCart.length; i++) {
+    btnCart[i].onclick = function() {
+        window.location.href = "./cart.html"
     }
 }

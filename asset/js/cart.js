@@ -21,6 +21,7 @@ const quantityResult = document.querySelector('.quantity__result')
 
 const btnBackToVegetable = document.querySelector('#backToMainPage')
 
+
 // Scroll to Top
 btnScrollToTop.onclick = function() {
     window.scrollTo(0, 0);
