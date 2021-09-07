@@ -29,12 +29,11 @@ const sildeShowDots = document.querySelectorAll('.slide-show__control-dot-item')
 const customer = document.querySelector('.customer__list-wide');
 const overLay = document.querySelector('.overlay-begin')
 const Modal = document.querySelector('.modal')
+const menuMainOverlay = document.querySelector('.soft__menu')
 const menuMain = document.querySelector('.soft__menu-list')
 const menuOne = document.querySelectorAll('.soft__menu-item')
 const menuSecond = document.querySelectorAll('.soft__menu-item-second')
 const menuThird = document.querySelectorAll('.soft__menu-item-thirst')
-const menuOverlay = document.querySelector('.soft__menu')
-const softMenu = document.querySelector('.soft__menu-list')
 const detailRedirect = document.querySelectorAll('.product-item__button-item--view')
 const detailImgs = document.querySelectorAll('.detail__img-list-item img')
 
@@ -139,10 +138,7 @@ overLay.onclick = function() {
 Modal.onclick = function(event) {
     event.stopPropagation();
 }
-btnCloseMenuSoft.onclick = function() {
-    menuOverlay.classList.add('close');
-    console.log('check')
-}
+
 
 // Scroll to Top
 btnScrollToTop.onclick = function() {
@@ -150,7 +146,6 @@ btnScrollToTop.onclick = function() {
 }
 
 // Menu
-
 menuOne.forEach(function(element) {
     var stateMenuOpen = false;
     element.onclick = function() {
@@ -202,17 +197,21 @@ menuThird.forEach(function(element) {
     }
 })
 
-btnMenuSoft.onclick = function(event) {
-    menuOverlay.classList.remove('close');
 
-    setTimeout(() => {
-        menuMain.style.transform = 'translateX(0)';
-    })
+// Control soft menu
+btnMenuSoft.onclick = function(event) {
+    menuMainOverlay.classList.add('open')
+    menuMain.classList.add('open')
 }
-menuOverlay.onclick = function(event) {
-    menuOverlay.classList.add('close')
+btnCloseMenuSoft.onclick = function() {
+    menuMainOverlay.classList.remove('open');
+    menuMain.classList.remove('open');
 }
-softMenu.onclick = function(event) {
+menuMainOverlay.onclick = function(event) {
+    menuMainOverlay.classList.remove('open')
+    menuMain.classList.remove('open');
+}
+menuMain.onclick = function(event) {
     event.stopPropagation();
 }
 
@@ -240,5 +239,49 @@ for (let i = 0; i < detailRedirect.length; i++) {
 for (let i = 0; i < btnCart.length; i++) {
     btnCart[i].onclick = function() {
         window.location.href = "./cart.html"
+    }
+}
+
+// Soft header control
+openElement = (element) => {
+    element.classList.add("open")
+}
+closeElement = (element) => {
+    element.classList.remove("open")
+}
+
+const btnBag = document.querySelector('.nav-right__icon--bag')
+let stateBag = false;
+btnBag.onclick = () => {
+    if (!stateBag) {
+        openElement(btnBag, stateBag)
+        stateBag = true
+    } else {
+        closeElement(btnBag, stateBag)
+        stateBag = false
+    }
+}
+
+const btnNav = document.querySelector('.nav-right__icon--nav')
+let stateNav = false;
+btnNav.onclick = () => {
+    if (!stateNav) {
+        openElement(btnNav, stateNav)
+        stateNav = true
+    } else {
+        closeElement(btnNav, stateNav)
+        stateNav = false
+    }
+}
+
+const btnSearch = document.querySelector('.nav-right__icon--search')
+let stateSearch = false;
+btnSearch.onclick = () => {
+    if (!stateSearch) {
+        openElement(btnSearch, stateSearch)
+        stateSearch = true
+    } else {
+        closeElement(btnSearch, stateSearch)
+        stateSearch = false
     }
 }

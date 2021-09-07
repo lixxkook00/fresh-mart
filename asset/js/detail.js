@@ -9,6 +9,7 @@ const menuOverlay = document.querySelector('.soft__menu')
 const softMenu = document.querySelector('.soft__menu-list')
 const btnCloseModal = document.querySelector('#modal_close');
 
+const menuMainOverlay = document.querySelector('.soft__menu')
 const btnMenuSoft = document.querySelector('#menuSoft');
 const btnCloseMenuSoft = document.querySelector('#btnCloseSoftMenu');
 const detailImgs = document.querySelectorAll('.detail__img-list-item img')
@@ -102,22 +103,21 @@ menuThird.forEach(function(element) {
     }
 })
 
+// Control soft menu
 btnMenuSoft.onclick = function(event) {
-    menuOverlay.classList.remove('close');
-
-    setTimeout(() => {
-        menuMain.style.transform = 'translateX(0)';
-    })
-}
-menuOverlay.onclick = function(event) {
-    menuOverlay.classList.add('close')
-}
-softMenu.onclick = function(event) {
-    event.stopPropagation();
+    menuMainOverlay.classList.add('open')
+    menuMain.classList.add('open')
 }
 btnCloseMenuSoft.onclick = function() {
-    menuOverlay.classList.add('close');
-    console.log('check')
+    menuMainOverlay.classList.remove('open');
+    menuMain.classList.remove('open');
+}
+menuMainOverlay.onclick = function(event) {
+    menuMainOverlay.classList.remove('open')
+    menuMain.classList.remove('open');
+}
+menuMain.onclick = function(event) {
+    event.stopPropagation();
 }
 
 window.onscroll = function() { myFunction() };
@@ -161,5 +161,49 @@ btnBackToVegetable.onclick = function() {
 for (let i = 0; i < btnCart.length; i++) {
     btnCart[i].onclick = function() {
         window.location.href = "./cart.html"
+    }
+}
+
+// Soft header control
+openElement = (element) => {
+    element.classList.add("open")
+}
+closeElement = (element) => {
+    element.classList.remove("open")
+}
+
+const btnBag = document.querySelector('.nav-right__icon--bag')
+let stateBag = false;
+btnBag.onclick = () => {
+    if (!stateBag) {
+        openElement(btnBag, stateBag)
+        stateBag = true
+    } else {
+        closeElement(btnBag, stateBag)
+        stateBag = false
+    }
+}
+
+const btnNav = document.querySelector('.nav-right__icon--nav')
+let stateNav = false;
+btnNav.onclick = () => {
+    if (!stateNav) {
+        openElement(btnNav, stateNav)
+        stateNav = true
+    } else {
+        closeElement(btnNav, stateNav)
+        stateNav = false
+    }
+}
+
+const btnSearch = document.querySelector('.nav-right__icon--search')
+let stateSearch = false;
+btnSearch.onclick = () => {
+    if (!stateSearch) {
+        openElement(btnSearch, stateSearch)
+        stateSearch = true
+    } else {
+        closeElement(btnSearch, stateSearch)
+        stateSearch = false
     }
 }

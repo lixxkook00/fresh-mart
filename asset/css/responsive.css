@@ -52,10 +52,15 @@
         bottom: 0;
         left: 0;
         right: 0;
-        z-index: 10;
-        background-color: rgba(0, 0, 0, .6);
         width: 100%;
+        background-color: rgba(0, 0, 0, .6);
         letter-spacing: 1px;
+        transform: translateX(-100%);
+        transition: transform linear 0.01s;
+        z-index: 10;
+    }
+    .soft__menu.open {
+        transform: translateX(0);
     }
     .soft__menu-list {
         background-color: #fff;
@@ -65,9 +70,11 @@
         margin: 0;
         padding: 40px 15px 0;
         overflow: auto;
-        /* display: none; */
-        transform: translateX(-101%);
-        transition: transform linear 0.3s;
+        transform: translateX(-100%);
+        transition: transform ease-out .5s;
+    }
+    .soft__menu-list.open {
+        transform: translateX(0);
     }
     .soft__menu-list::-webkit-scrollbar {
         display: none;
@@ -123,7 +130,7 @@
         cursor: pointer;
     }
     /* Header Nav Soft Nav Left Search*/
-    .nav-right__icon:hover .soft__search {
+    .nav-right__icon--search.open .soft__search {
         visibility: visible;
         transform: translateY(0px);
         opacity: 1;
@@ -162,7 +169,7 @@
     .nav-right__icon {
         position: relative;
     }
-    .nav-right__icon:hover .nav-right {
+    .nav-right__icon--nav.open .nav-right {
         visibility: visible;
         transform: translateY(0px);
         -webkit-transform: translateY(0px);
@@ -196,7 +203,7 @@
         border-bottom: 1px solid #EEE;
     }
     /* Header Nav Soft Bag*/
-    .nav-right__icon:hover .soft__bag {
+    .nav-right__icon--bag.open .soft__bag {
         visibility: visible;
         transform: translateY(0px);
         -webkit-transform: translateY(0px);
